@@ -1,0 +1,4 @@
+#perlimnary steps (make dictionary and index file for reference):
+samtools faidx /home/pogoda/Sunflower_sorted_bams/Han412-HO.fasta
+
+java -jar /home/pogoda/software/picard.jar CreateSequenceDictionary R=/home/pogoda/Sunflower_sorted_bams/Han412-HO.fasta O=/home/pogoda/Sunflower_sorted_bams/Han412-HO.dict

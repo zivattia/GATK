@@ -1,0 +1,9 @@
+gatk pipeline
+1. index and create dict file for referance -> pre steps
+2. create bam files from trimmed fastq -> create_bams.sh
+3. index bam files -> index.sh
+4. add read group to bam files -> ADDREADGROUP.sh
+5. index the read group bam files -> index.sh
+6. convert RG bams to g.vcf files -> HaplotypeCaller_GATK.sh
+7. creat a data base -> GenomicsDBImport_GATK.sh
+8. joint genotype all the g.vcf files to create the final vcf -> GenotypesGVCFs_GATK.sh
